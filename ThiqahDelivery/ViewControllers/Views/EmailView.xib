@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EmailView" customModule="ThiqahDelivery" customModuleProvider="target">
+            <connections>
+                <outlet property="confirmPassword" destination="B3o-v9-9YP" id="iE0-XN-KXh"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="Buv-aT-1aL"/>
+                <outlet property="txtEmail" destination="r2P-5y-GSY" id="IG9-rp-a0g"/>
+                <outlet property="txtPass" destination="2v0-Nf-tag" id="UJh-fp-iDp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r2P-5y-GSY">
+                    <rect key="frame" x="16" y="10" width="343" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="YRX-yT-FXo"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Fkq-pA-NlQ"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2v0-Nf-tag">
+                    <rect key="frame" x="16" y="60" width="343" height="40"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="2t9-x1-eFo"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B3o-v9-9YP">
+                    <rect key="frame" x="16" y="110" width="343" height="40"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="TSt-ip-F0l"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="B3o-v9-9YP" firstAttribute="height" secondItem="2v0-Nf-tag" secondAttribute="height" id="09n-V3-hLO"/>
+                <constraint firstItem="r2P-5y-GSY" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="0Jz-9N-E3r"/>
+                <constraint firstItem="B3o-v9-9YP" firstAttribute="top" secondItem="2v0-Nf-tag" secondAttribute="bottom" constant="10" id="Axv-ad-XXp"/>
+                <constraint firstItem="2v0-Nf-tag" firstAttribute="top" secondItem="r2P-5y-GSY" secondAttribute="bottom" constant="10" id="Ryx-hI-ZDn"/>
+                <constraint firstItem="r2P-5y-GSY" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="dcp-eE-foR"/>
+                <constraint firstItem="B3o-v9-9YP" firstAttribute="leading" secondItem="2v0-Nf-tag" secondAttribute="leading" id="iOP-tt-k45"/>
+                <constraint firstItem="2v0-Nf-tag" firstAttribute="height" secondItem="r2P-5y-GSY" secondAttribute="height" id="lW8-UR-T0E"/>
+                <constraint firstItem="2v0-Nf-tag" firstAttribute="width" secondItem="r2P-5y-GSY" secondAttribute="width" id="nrl-SO-j7a"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="r2P-5y-GSY" secondAttribute="trailing" constant="16" id="tYe-cv-LDz"/>
+                <constraint firstItem="2v0-Nf-tag" firstAttribute="leading" secondItem="r2P-5y-GSY" secondAttribute="leading" id="ugV-kt-RLw"/>
+                <constraint firstItem="B3o-v9-9YP" firstAttribute="width" secondItem="2v0-Nf-tag" secondAttribute="width" id="yy2-pM-x7J"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="33.5" y="84"/>
+        </view>
+    </objects>
+</document>

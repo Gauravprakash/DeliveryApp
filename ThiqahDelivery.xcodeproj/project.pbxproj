@@ -1,0 +1,669 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2CAF11DCF74B1EBCD85FAD39 /* Pods_ThiqahDelivery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C7541CCCE37063729797F72 /* Pods_ThiqahDelivery.framework */; };
+		F404223F2124418D00310D62 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F404223E2124418D00310D62 /* HomeScreen.swift */; };
+		F4042242212447C300310D62 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4042241212447C300310D62 /* Login.storyboard */; };
+		F40422442124481A00310D62 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40422432124481900310D62 /* LoginScreen.swift */; };
+		F40422472124488500310D62 /* EmailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F40422462124488500310D62 /* EmailView.xib */; };
+		F40422492124492C00310D62 /* EmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40422482124492C00310D62 /* EmailView.swift */; };
+		F404224B212450C600310D62 /* ButtonExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F404224A212450C600310D62 /* ButtonExt.swift */; };
+		F404224D2124512E00310D62 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F404224C2124512E00310D62 /* Home.storyboard */; };
+		F4042250212456E100310D62 /* VegaScrollFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F404224F212456E100310D62 /* VegaScrollFlowLayout.swift */; };
+		F41E9AC721254601004F07E2 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F41E9AC621254601004F07E2 /* SWRevealViewController.m */; };
+		F41E9ACA21255195004F07E2 /* DashboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41E9AC821255194004F07E2 /* DashboardCell.swift */; };
+		F41E9ACB21255195004F07E2 /* DashboardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F41E9AC921255195004F07E2 /* DashboardCell.xib */; };
+		F41E9ACD21255D21004F07E2 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41E9ACC21255D20004F07E2 /* CardView.swift */; };
+		F4396E4C212866620010865E /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4396E4A212866620010865E /* UserCell.swift */; };
+		F4396E4D212866620010865E /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4396E4B212866620010865E /* UserCell.xib */; };
+		F463F00421242D3F005184C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F463F00321242D3F005184C8 /* AppDelegate.swift */; };
+		F463F00921242D3F005184C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F463F00721242D3F005184C8 /* Main.storyboard */; };
+		F463F00C21242D3F005184C8 /* ThiqahDelivery.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F463F00A21242D3F005184C8 /* ThiqahDelivery.xcdatamodeld */; };
+		F463F00E21242D46005184C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F463F00D21242D46005184C8 /* Assets.xcassets */; };
+		F463F01121242D46005184C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F463F00F21242D46005184C8 /* LaunchScreen.storyboard */; };
+		F463F01A2124324B005184C8 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F463F0192124324B005184C8 /* APIService.swift */; };
+		F463F01C21243469005184C8 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F463F01B21243469005184C8 /* APIManager.swift */; };
+		F463F01E21243E2F005184C8 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = F463F01D21243E2F005184C8 /* Theme.swift */; };
+		F463F02121243F2D005184C8 /* ColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F463F02021243F2D005184C8 /* ColorExt.swift */; };
+		F4C51D002125EB2200467163 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C51CFF2125EB2200467163 /* LoginModel.swift */; };
+		F4C51D022126094200467163 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C51D012126094200467163 /* StringExt.swift */; };
+		F4C51D0421260BA300467163 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C51D0321260BA300467163 /* Toast.swift */; };
+		F4C51D07212611A700467163 /* DefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C51D06212611A700467163 /* DefaultManager.swift */; };
+		F4CABB292127589A0035ECE7 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CABB282127589A0035ECE7 /* BaseViewController.swift */; };
+		F4D07E6B2126A5E90098A022 /* LoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D07E6A2126A5E90098A022 /* LoginData.swift */; };
+		F4D07E6D2126F2DD0098A022 /* ViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D07E6C2126F2DD0098A022 /* ViewControllerExt.swift */; };
+		F4D07E712126F3500098A022 /* DialogLoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D07E6F2126F3500098A022 /* DialogLoaderViewController.swift */; };
+		F4D07E722126F3500098A022 /* DialogLoaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4D07E702126F3500098A022 /* DialogLoaderViewController.xib */; };
+		F4E5E6EC2124BB70006978D7 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4E5E6EB2124BB70006978D7 /* Dashboard.storyboard */; };
+		F4E5E6EE2124BDAA006978D7 /* LeftMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E5E6ED2124BDAA006978D7 /* LeftMenuController.swift */; };
+		F4E5E6F82124C961006978D7 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E5E6F72124C961006978D7 /* Utils.swift */; };
+		F4ED9DC421293DD700265DD4 /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ED9DC321293DD700265DD4 /* ProfileScreen.swift */; };
+		F4ED9DC62129431900265DD4 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4ED9DC52129431900265DD4 /* Profile.storyboard */; };
+		F4F33F9F212D33CF00BDC461 /* UIAlertControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F33F9E212D33CF00BDC461 /* UIAlertControllerExt.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1C7541CCCE37063729797F72 /* Pods_ThiqahDelivery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThiqahDelivery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6922D8017B2E96BEEEC41A7 /* Pods-ThiqahDelivery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThiqahDelivery.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThiqahDelivery/Pods-ThiqahDelivery.release.xcconfig"; sourceTree = "<group>"; };
+		CC817BD008D662B8AE29540A /* Pods-ThiqahDelivery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThiqahDelivery.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThiqahDelivery/Pods-ThiqahDelivery.debug.xcconfig"; sourceTree = "<group>"; };
+		F404223E2124418D00310D62 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		F4042241212447C300310D62 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		F40422432124481900310D62 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		F40422462124488500310D62 /* EmailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmailView.xib; sourceTree = "<group>"; };
+		F40422482124492C00310D62 /* EmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailView.swift; sourceTree = "<group>"; };
+		F404224A212450C600310D62 /* ButtonExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExt.swift; sourceTree = "<group>"; };
+		F404224C2124512E00310D62 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		F404224F212456E100310D62 /* VegaScrollFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VegaScrollFlowLayout.swift; sourceTree = "<group>"; };
+		F41E9AC521254601004F07E2 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		F41E9AC621254601004F07E2 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		F41E9AC821255194004F07E2 /* DashboardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCell.swift; sourceTree = "<group>"; };
+		F41E9AC921255195004F07E2 /* DashboardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardCell.xib; sourceTree = "<group>"; };
+		F41E9ACC21255D20004F07E2 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		F4396E4A212866620010865E /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		F4396E4B212866620010865E /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
+		F463F00021242D3F005184C8 /* ThiqahDelivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThiqahDelivery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F463F00321242D3F005184C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F463F00821242D3F005184C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F463F00B21242D3F005184C8 /* ThiqahDelivery.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ThiqahDelivery.xcdatamodel; sourceTree = "<group>"; };
+		F463F00D21242D46005184C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F463F01021242D46005184C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F463F01221242D46005184C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F463F0192124324B005184C8 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		F463F01B21243469005184C8 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		F463F01D21243E2F005184C8 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		F463F02021243F2D005184C8 /* ColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExt.swift; sourceTree = "<group>"; };
+		F4C51CFF2125EB2200467163 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		F4C51D012126094200467163 /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
+		F4C51D0321260BA300467163 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		F4C51D06212611A700467163 /* DefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultManager.swift; sourceTree = "<group>"; };
+		F4CABB282127589A0035ECE7 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F4D07E6A2126A5E90098A022 /* LoginData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginData.swift; sourceTree = "<group>"; };
+		F4D07E6C2126F2DD0098A022 /* ViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExt.swift; sourceTree = "<group>"; };
+		F4D07E6F2126F3500098A022 /* DialogLoaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogLoaderViewController.swift; sourceTree = "<group>"; };
+		F4D07E702126F3500098A022 /* DialogLoaderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DialogLoaderViewController.xib; sourceTree = "<group>"; };
+		F4E5E6EB2124BB70006978D7 /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		F4E5E6ED2124BDAA006978D7 /* LeftMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuController.swift; sourceTree = "<group>"; };
+		F4E5E6EF2124C3BE006978D7 /* ThiqahDelivery-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ThiqahDelivery-Bridging-Header.h"; sourceTree = "<group>"; };
+		F4E5E6F72124C961006978D7 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		F4ED9DC321293DD700265DD4 /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
+		F4ED9DC52129431900265DD4 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		F4F33F9E212D33CF00BDC461 /* UIAlertControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExt.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F463EFFD21242D3F005184C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CAF11DCF74B1EBCD85FAD39 /* Pods_ThiqahDelivery.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA51D733219ECBF658B9A0A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C7541CCCE37063729797F72 /* Pods_ThiqahDelivery.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B14597F8F4FBAF914EFE7428 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC817BD008D662B8AE29540A /* Pods-ThiqahDelivery.debug.xcconfig */,
+				A6922D8017B2E96BEEEC41A7 /* Pods-ThiqahDelivery.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F404223D2124416B00310D62 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F40422452124486700310D62 /* Views */,
+				F404223E2124418D00310D62 /* HomeScreen.swift */,
+				F40422432124481900310D62 /* LoginScreen.swift */,
+				F4E5E6ED2124BDAA006978D7 /* LeftMenuController.swift */,
+				F4CABB282127589A0035ECE7 /* BaseViewController.swift */,
+				F4ED9DC321293DD700265DD4 /* ProfileScreen.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F4042240212447A800310D62 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				F4042241212447C300310D62 /* Login.storyboard */,
+				F404224C2124512E00310D62 /* Home.storyboard */,
+				F4E5E6EB2124BB70006978D7 /* Dashboard.storyboard */,
+				F4ED9DC52129431900265DD4 /* Profile.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		F40422452124486700310D62 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F41E9ACC21255D20004F07E2 /* CardView.swift */,
+				F404224E212456E100310D62 /* FlowLayouts */,
+				F40422462124488500310D62 /* EmailView.xib */,
+				F40422482124492C00310D62 /* EmailView.swift */,
+				F41E9AC821255194004F07E2 /* DashboardCell.swift */,
+				F41E9AC921255195004F07E2 /* DashboardCell.xib */,
+				F4396E4A212866620010865E /* UserCell.swift */,
+				F4396E4B212866620010865E /* UserCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F404224E212456E100310D62 /* FlowLayouts */ = {
+			isa = PBXGroup;
+			children = (
+				F404224F212456E100310D62 /* VegaScrollFlowLayout.swift */,
+			);
+			path = FlowLayouts;
+			sourceTree = "<group>";
+		};
+		F41E9AC421254601004F07E2 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F41E9AC521254601004F07E2 /* SWRevealViewController.h */,
+				F41E9AC621254601004F07E2 /* SWRevealViewController.m */,
+			);
+			path = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		F463EFF721242D3F005184C8 = {
+			isa = PBXGroup;
+			children = (
+				F463F00221242D3F005184C8 /* ThiqahDelivery */,
+				F463F00121242D3F005184C8 /* Products */,
+				B14597F8F4FBAF914EFE7428 /* Pods */,
+				AA51D733219ECBF658B9A0A8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F463F00121242D3F005184C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F463F00021242D3F005184C8 /* ThiqahDelivery.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F463F00221242D3F005184C8 /* ThiqahDelivery */ = {
+			isa = PBXGroup;
+			children = (
+				F4C51D0521260BB100467163 /* Utils */,
+				F41E9AC421254601004F07E2 /* SWRevealViewController */,
+				F4042240212447A800310D62 /* StoryBoards */,
+				F404223D2124416B00310D62 /* ViewControllers */,
+				F463F01F21243F19005184C8 /* Extensions */,
+				F463F01821243142005184C8 /* APIClient */,
+				F463F00321242D3F005184C8 /* AppDelegate.swift */,
+				F463F00721242D3F005184C8 /* Main.storyboard */,
+				F463F00D21242D46005184C8 /* Assets.xcassets */,
+				F463F00F21242D46005184C8 /* LaunchScreen.storyboard */,
+				F463F01221242D46005184C8 /* Info.plist */,
+				F463F00A21242D3F005184C8 /* ThiqahDelivery.xcdatamodeld */,
+				F4E5E6EF2124C3BE006978D7 /* ThiqahDelivery-Bridging-Header.h */,
+			);
+			path = ThiqahDelivery;
+			sourceTree = "<group>";
+		};
+		F463F01821243142005184C8 /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				F4C51CFE2125EB0C00467163 /* Requests */,
+				F463F0192124324B005184C8 /* APIService.swift */,
+				F463F01B21243469005184C8 /* APIManager.swift */,
+				F463F01D21243E2F005184C8 /* Theme.swift */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		F463F01F21243F19005184C8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F463F02021243F2D005184C8 /* ColorExt.swift */,
+				F404224A212450C600310D62 /* ButtonExt.swift */,
+				F4C51D012126094200467163 /* StringExt.swift */,
+				F4D07E6C2126F2DD0098A022 /* ViewControllerExt.swift */,
+				F4F33F9E212D33CF00BDC461 /* UIAlertControllerExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F4C51CFE2125EB0C00467163 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				F4C51CFF2125EB2200467163 /* LoginModel.swift */,
+				F4D07E6A2126A5E90098A022 /* LoginData.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		F4C51D0521260BB100467163 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F4D07E6E2126F3260098A022 /* DialogLoader */,
+				F4E5E6F72124C961006978D7 /* Utils.swift */,
+				F4C51D0321260BA300467163 /* Toast.swift */,
+				F4C51D06212611A700467163 /* DefaultManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F4D07E6E2126F3260098A022 /* DialogLoader */ = {
+			isa = PBXGroup;
+			children = (
+				F4D07E6F2126F3500098A022 /* DialogLoaderViewController.swift */,
+				F4D07E702126F3500098A022 /* DialogLoaderViewController.xib */,
+			);
+			path = DialogLoader;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F463EFFF21242D3F005184C8 /* ThiqahDelivery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F463F01521242D46005184C8 /* Build configuration list for PBXNativeTarget "ThiqahDelivery" */;
+			buildPhases = (
+				255B0A167A8D8DB14BE7E085 /* [CP] Check Pods Manifest.lock */,
+				F463EFFC21242D3F005184C8 /* Sources */,
+				F463EFFD21242D3F005184C8 /* Frameworks */,
+				F463EFFE21242D3F005184C8 /* Resources */,
+				93D6DD51A9052233E3EB06A7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThiqahDelivery;
+			productName = ThiqahDelivery;
+			productReference = F463F00021242D3F005184C8 /* ThiqahDelivery.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F463EFF821242D3F005184C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Gaurav Prakash";
+				TargetAttributes = {
+					F463EFFF21242D3F005184C8 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
+					};
+				};
+			};
+			buildConfigurationList = F463EFFB21242D3F005184C8 /* Build configuration list for PBXProject "ThiqahDelivery" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F463EFF721242D3F005184C8;
+			productRefGroup = F463F00121242D3F005184C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F463EFFF21242D3F005184C8 /* ThiqahDelivery */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F463EFFE21242D3F005184C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F40422472124488500310D62 /* EmailView.xib in Resources */,
+				F4ED9DC62129431900265DD4 /* Profile.storyboard in Resources */,
+				F4042242212447C300310D62 /* Login.storyboard in Resources */,
+				F41E9ACB21255195004F07E2 /* DashboardCell.xib in Resources */,
+				F463F01121242D46005184C8 /* LaunchScreen.storyboard in Resources */,
+				F4396E4D212866620010865E /* UserCell.xib in Resources */,
+				F404224D2124512E00310D62 /* Home.storyboard in Resources */,
+				F463F00E21242D46005184C8 /* Assets.xcassets in Resources */,
+				F4D07E722126F3500098A022 /* DialogLoaderViewController.xib in Resources */,
+				F4E5E6EC2124BB70006978D7 /* Dashboard.storyboard in Resources */,
+				F463F00921242D3F005184C8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		255B0A167A8D8DB14BE7E085 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ThiqahDelivery-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93D6DD51A9052233E3EB06A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ThiqahDelivery/Pods-ThiqahDelivery-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ContextMenu/ContextMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework",
+				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
+				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/Motion/Motion.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ContextMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFTextAccessibility.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Motion.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ThiqahDelivery/Pods-ThiqahDelivery-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F463EFFC21242D3F005184C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4042250212456E100310D62 /* VegaScrollFlowLayout.swift in Sources */,
+				F4C51D022126094200467163 /* StringExt.swift in Sources */,
+				F4D07E712126F3500098A022 /* DialogLoaderViewController.swift in Sources */,
+				F463F00C21242D3F005184C8 /* ThiqahDelivery.xcdatamodeld in Sources */,
+				F463F01C21243469005184C8 /* APIManager.swift in Sources */,
+				F4D07E6D2126F2DD0098A022 /* ViewControllerExt.swift in Sources */,
+				F4F33F9F212D33CF00BDC461 /* UIAlertControllerExt.swift in Sources */,
+				F4E5E6F82124C961006978D7 /* Utils.swift in Sources */,
+				F40422492124492C00310D62 /* EmailView.swift in Sources */,
+				F404223F2124418D00310D62 /* HomeScreen.swift in Sources */,
+				F463F01A2124324B005184C8 /* APIService.swift in Sources */,
+				F41E9AC721254601004F07E2 /* SWRevealViewController.m in Sources */,
+				F404224B212450C600310D62 /* ButtonExt.swift in Sources */,
+				F463F00421242D3F005184C8 /* AppDelegate.swift in Sources */,
+				F4396E4C212866620010865E /* UserCell.swift in Sources */,
+				F41E9ACA21255195004F07E2 /* DashboardCell.swift in Sources */,
+				F40422442124481A00310D62 /* LoginScreen.swift in Sources */,
+				F4C51D002125EB2200467163 /* LoginModel.swift in Sources */,
+				F463F01E21243E2F005184C8 /* Theme.swift in Sources */,
+				F463F02121243F2D005184C8 /* ColorExt.swift in Sources */,
+				F4C51D0421260BA300467163 /* Toast.swift in Sources */,
+				F4CABB292127589A0035ECE7 /* BaseViewController.swift in Sources */,
+				F4ED9DC421293DD700265DD4 /* ProfileScreen.swift in Sources */,
+				F4C51D07212611A700467163 /* DefaultManager.swift in Sources */,
+				F41E9ACD21255D21004F07E2 /* CardView.swift in Sources */,
+				F4E5E6EE2124BDAA006978D7 /* LeftMenuController.swift in Sources */,
+				F4D07E6B2126A5E90098A022 /* LoginData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F463F00721242D3F005184C8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F463F00821242D3F005184C8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F463F00F21242D46005184C8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F463F01021242D46005184C8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F463F01321242D46005184C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F463F01421242D46005184C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F463F01621242D46005184C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC817BD008D662B8AE29540A /* Pods-ThiqahDelivery.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5GHY4529HZ;
+				INFOPLIST_FILE = ThiqahDelivery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlsonwagonlit.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ThiqahDelivery/ThiqahDelivery-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F463F01721242D46005184C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6922D8017B2E96BEEEC41A7 /* Pods-ThiqahDelivery.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5GHY4529HZ;
+				INFOPLIST_FILE = ThiqahDelivery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.carlsonwagonlit.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ThiqahDelivery/ThiqahDelivery-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F463EFFB21242D3F005184C8 /* Build configuration list for PBXProject "ThiqahDelivery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F463F01321242D46005184C8 /* Debug */,
+				F463F01421242D46005184C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F463F01521242D46005184C8 /* Build configuration list for PBXNativeTarget "ThiqahDelivery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F463F01621242D46005184C8 /* Debug */,
+				F463F01721242D46005184C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F463F00A21242D3F005184C8 /* ThiqahDelivery.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F463F00B21242D3F005184C8 /* ThiqahDelivery.xcdatamodel */,
+			);
+			currentVersion = F463F00B21242D3F005184C8 /* ThiqahDelivery.xcdatamodel */;
+			path = ThiqahDelivery.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F463EFF821242D3F005184C8 /* Project object */;
+}
